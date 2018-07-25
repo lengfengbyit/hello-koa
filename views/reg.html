@@ -1,0 +1,16 @@
+{% extends 'layout.html' %} {% block main %}
+<div style="width: 500px;margin: 0px auto;">
+    <h1>注册用户</h1>
+    <form action="/reg" method="post">
+        <div class="form-group">
+            <label for="name">用户名</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+{% endblock %}
